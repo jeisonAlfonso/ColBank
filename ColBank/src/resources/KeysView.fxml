@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.RegisterKeys">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFCD00;">
+               <children>
+                  <Label text="COLBANK">
+                     <font>
+                        <Font name="Arial Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="15.0">
+               <children>
+                  <Label text="Keys">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="llaveField" maxWidth="200.0" promptText="Enter the key" />
+                  <TextField fx:id="aliasField" maxWidth="200.0" promptText="Enter the alias" />
+                  <Button fx:id="addfavoriteButton" mnemonicParsing="false" onAction="#addFavorite" text="Add favorite key" />
+                  <Button fx:id="listFavoriteButton" mnemonicParsing="false" onAction="#listFavorite" text="List favorite keys" />
+                  <Button fx:id="validateFavoriteButton" mnemonicParsing="false" onAction="#validateFavorite" text="Validate favorite key" />
+                  <Button fx:id="editFavoriteButton" mnemonicParsing="false" onAction="#editFavorite" text="Edit favorite key alias" />
+                  <Button fx:id="deleteFavoriteButton" mnemonicParsing="false" onAction="#deleteFavorite" text="Delete favorite key" />
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToHomePage" text="Back" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
